@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star War Game</title>
+
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>Star War RPG</h1>
+    </header>
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!--Selecting Section-->
+
+    <div id="YourCharacters" class="container">
+        <div class="row">
+            <div class="col">
+                <p>Luke Skywalker</p>
+                <img src="assets/image/luke.jpg" type="image">
+                <p id="Hp">Luke's Hp</p>
+                <button id="Luke">select</button>
+            </div>
+
+            <div class="col">
+                <p>Leia</p>
+                <img src="assets/image/Leia.jpg" type="image">
+                <p id="Hp">Leia's Hp</p>
+                <button id="Leia">select</button>
+            </div>
+        
+            <div class="col">
+                <p> Darth Vader</p>
+                <img src="assets/image/Darth.jpg" type="image">
+                <p id="Hp">Darth's Hp</p>
+                <button id="Darth">select</button>
+            </div>
+
+            <div class="col">
+                <p>Yoda</p>
+                <img src="assets/image/Yoda.jpg" type="image">
+                <p id="Hp">Yoda's Hp</p>
+                <button id="Yoda">select</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1> Your Character</h1>
+        <p id="chosen-Character"></p>
+        <p id="chosen-Hp"></p>
+    </div>
+
+    <div id="Fighters" class="container">
+
+        <h1>Enemy Available to Attack</h1>
+        <div class="row">
+            <div>
+                <div id="LukeGroup" class="col">
+                    <img src="assets/image/luke.jpg" type="image">
+                    <p id="Hp">luke's Hp</p>
+                    <button id="LukeAsFighter">select</button>
+                </div>  
+            </div>
+        
+            <div>
+                <div id="DarthGroup" class="col">
+                    <img src="assets/image/Darth.jpg" type="image">
+                    <p id="Hp">Darth's Hp</p>
+                    <button id="DarthAsFighter">select</button>
+                </div>
+            </div>
+
+            <div>
+                <div id="LeiaGroup" class="col">
+                    <img src="assets/image/Leia.jpg" type="image">
+                    <p id="Hp">Leia's Hp</p>
+                    <button id="LeiaAsFighter">select</button>
+                </div>  
+            </div>
+            <div>
+                <div id="YodaGroup" class="col">
+                    <img src="assets/image/Yoda.jpg" type="image">
+                    <p id="Hp">Yoda's Hp</p>
+                    <button id="YodaAsFighter">select</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Defender">
+        <h1>Defender</h1>
+        <p id="chosen-Fighter"></p>
+        <p id="Fighter-Hp"></p>
+    </div>
+
+    <!--Fight section-->
+    <div>
+        <button id="Attack">Attack</button>
+        <p id="AttackMessage"></p>
+
+    </div>
+    <!--javasrcipt-->
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
